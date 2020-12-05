@@ -1,4 +1,4 @@
-def lps(x,y):
+def lcs(x,y):
 	m , n = len(x) , len(y)
 	mat = [[0 for i in range(m+1)] for i in range(n+1)]
 	for indx , i in enumerate(y):
@@ -11,4 +11,4 @@ def lps(x,y):
 	print(mat[n][m])
 
 x = str(input())
-lps(x,x[::-1])
+lcs(x,x[::-1])
